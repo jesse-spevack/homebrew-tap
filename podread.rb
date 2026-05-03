@@ -5,20 +5,20 @@
 class Podread < Formula
   desc "CLI for podread.app — text to speech to your personal podcast feed"
   homepage "https://podread.app"
-  version "0.1.5"
+  version "0.1.6"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.5/podread_darwin_amd64.tar.gz"
-      sha256 "f74883fecea382d13280f3b37870cb1e45d9ca5c5b540f9b9b747f544e05099c"
+      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.6/podread_darwin_amd64.tar.gz"
+      sha256 "c3f7cc60bf172df57e17fbc0220c823ebfbd7237abead51af728f97e0bb8198d"
 
       define_method(:install) do
         bin.install "podread"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.5/podread_darwin_arm64.tar.gz"
-      sha256 "fa80c213cd14abc4467c4cd8d7de0fbc3371c9e89996e7a381c1eaf52c508ba2"
+      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.6/podread_darwin_arm64.tar.gz"
+      sha256 "833879ea4ce9a55a4bd34edc55117ee495a0e99499d09504f21d9bf17610cb95"
 
       define_method(:install) do
         bin.install "podread"
@@ -28,15 +28,15 @@ class Podread < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.5/podread_linux_amd64.tar.gz"
-      sha256 "a0bf122266f2c96dbb40bd1822a451cf0212fdb27b2d8c9be43faefc60f8e485"
+      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.6/podread_linux_amd64.tar.gz"
+      sha256 "93a15c0c68cbc757e7dccf5b5c3280edf79cbb83a58a7b60e87f5bab9af64697"
       define_method(:install) do
         bin.install "podread"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.5/podread_linux_arm64.tar.gz"
-      sha256 "663757a99d8ddf06fc0f0a9dbbb63764df9d41de3fcbaf577656c757f8d3bf5a"
+      url "https://github.com/jesse-spevack/podread-cli/releases/download/v0.1.6/podread_linux_arm64.tar.gz"
+      sha256 "63f8a989e4bad322db6a0a11e1b0fb32240ba993f03e9106acb65758ec7ddc3d"
       define_method(:install) do
         bin.install "podread"
       end
